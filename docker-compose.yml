@@ -1,0 +1,15 @@
+version: "3.1"
+
+services:
+  compiler-explorer:
+    image: grulfen/compiler_explorer:latest
+    container_name: godbolt-ce
+    ports:
+      - 10240:10240
+    networks:
+      - ce_network
+    restart: on-failure
+    stop_grace_period: 1m30s
+
+networks:
+  ce_network:
