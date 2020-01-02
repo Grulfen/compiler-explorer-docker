@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM alpine:latest
 
 LABEL maintainer="Gustav Svensk <grulfen3@gmail.com>"
 
