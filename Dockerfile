@@ -14,7 +14,6 @@ RUN echo "*** Installing Compiler Explorer ***" \
         git \
         clang \
         g++ \
-        xvfb \
     && git clone https://github.com/mattgodbolt/compiler-explorer.git /compiler-explorer \
     && cd /compiler-explorer \
     && make webpack \
