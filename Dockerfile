@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:bionic
 
 LABEL maintainer="Gustav Svensk <grulfen3@gmail.com>"
 
@@ -24,9 +24,7 @@ RUN echo "*** Installing Compiler Explorer ***" \
     && make webpack \
     && apt-get remove -y \
         wget \
-        make \
         curl \
-        git \
     && apt-get autoremove --purge -y \
     && apt-get autoclean -y \
     && rm -rf /var/cache/apt/* /tmp/*

@@ -2,7 +2,7 @@ version: "3.1"
 
 services:
   compiler-explorer:
-    image: grulfen/compiler_explorer:latest
+    image: grulfen/compiler_explorer:ubuntu
     container_name: godbolt-ce
     ports:
       - 10240:10240
