@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:focal
 
 LABEL maintainer="Gustav Svensk <grulfen3@gmail.com>"
 
@@ -15,9 +15,12 @@ RUN echo "*** Installing Compiler Explorer ***" \
         clang-6.0 \
         clang-7 \
         clang-8 \
+        clang-9 \
+        clang-10 \
         g++-7 \
         g++-8 \
-    && curl -sL https://deb.nodesource.com/setup_10.x | bash \
+        g++-9 \
+    && curl -sL https://deb.nodesource.com/setup_12.x | bash \
     && apt-get install -y nodejs \
     && git clone https://github.com/mattgodbolt/compiler-explorer.git /compiler-explorer \
     && cd /compiler-explorer \
